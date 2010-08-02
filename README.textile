@@ -1,0 +1,19 @@
+h1. Warbler isnt working for me
+
+to setup the way I have it setup in my environment is to run the two vendor rake tasks
+
+@jruby -S gem install warbler@
+
+@jruby -S rake rails:freeze:gems@
+
+@jruby -S rake unpack:gems@
+
+@jruby -S rake db:create:all@
+
+@jruby -S rake db:migrate@
+
+@warble war@
+
+and uplaod that to tomcat on localhost
+
+problem: its not running
